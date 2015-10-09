@@ -1,0 +1,19 @@
+{
+    "name": "negromovich/latlon-calculator",
+    "type": "library",
+    "description": "Calculate distance, bearing and more between Latitude/Longitude points",
+    "keywords": ["latlon"],
+    "homepage": "https://github.com/Negromovich/latlon-calculator",
+    "license": "MIT",
+    "authors": [
+        {"name": "Chris Veness"},
+        {"name": "Aliaksandr Markhvida"}
+    ],
+    "require": {
+        "php": ">=5.4"
+    },
+    "autoload": {
+        "psr-0": { "Negromovich\\LatLonCalculator": "" }
+    },
+    "target-dir": "Negromovich/LatLonCalculator"
+}
