@@ -45,7 +45,7 @@ class LatLon
      *
      * @param   LatLon $point - Latitude/longitude of destination point.
      * @param   number $radius [radius=6371e3] - (Mean) radius of earth (defaults to radius in metres).
-     * @returns number Distance between this point and destination point, in same units as radius.
+     * @return  number Distance between this point and destination point, in same units as radius.
      *
      * @example
      *     $p1 = new LatLon(52.205, 0.119); $p2 = new LatLon(48.857, 2.351);
@@ -74,7 +74,7 @@ class LatLon
      * Returns the (initial) bearing from 'this' point to destination point.
      *
      * @param   LatLon $point - Latitude/longitude of destination point.
-     * @returns number Initial bearing in degrees from north.
+     * @return  number Initial bearing in degrees from north.
      *
      * @example
      *     $p1 = new LatLon(52.205, 0.119); $p2 = new LatLon(48.857, 2.351);
@@ -99,7 +99,7 @@ class LatLon
      * will differ from the initial bearing by varying degrees according to distance and latitude.
      *
      * @param   LatLon $point - Latitude/longitude of destination point.
-     * @returns number Final bearing in degrees from north.
+     * @return  number Final bearing in degrees from north.
      *
      * @example
      *     $p1 = new LatLon(52.205, 0.119); $p2 = new LatLon(48.857, 2.351);
@@ -114,7 +114,7 @@ class LatLon
      * Returns the midpoint between 'this' point and the supplied point.
      *
      * @param   LatLon $point - Latitude/longitude of destination point.
-     * @returns LatLon Midpoint between this point and the supplied point.
+     * @return  LatLon Midpoint between this point and the supplied point.
      *
      * @example
      *     $p1 = new LatLon(52.205, 0.119); $p2 = new LatLon(48.857, 2.351);
@@ -146,7 +146,7 @@ class LatLon
      * @param   number $distance - Distance travelled, in same units as earth radius (default: metres).
      * @param   number $bearing - Initial bearing in degrees from north.
      * @param   number $radius [radius=6371e3] - (Mean) radius of earth (defaults to radius in metres).
-     * @returns LatLon Destination point.
+     * @return  LatLon Destination point.
      *
      * @example
      *     $p1 = new LatLon(51.4778, -0.0015);
@@ -180,7 +180,7 @@ class LatLon
      * @param   number $brng1 - Initial bearing from first point.
      * @param   LatLon $p2 - Second point.
      * @param   number $brng2 - Initial bearing from second point.
-     * @returns LatLon Destination point (null if no unique intersection defined).
+     * @return  LatLon Destination point (null if no unique intersection defined).
      *
      * @example
      *     $p1 = LatLon(51.8853, 0.2545); $brng1 = 108.547;
@@ -245,7 +245,7 @@ class LatLon
      * @param   LatLon $pathStart - Start point of great circle path.
      * @param   LatLon $pathEnd - End point of great circle path.
      * @param   number $radius [radius=6371e3] - (Mean) radius of earth (defaults to radius in metres).
-     * @returns number Distance to great circle (-ve if to left, +ve if to right of path).
+     * @return  number Distance to great circle (-ve if to left, +ve if to right of path).
      *
      * @example
      *   $pCurrent = new LatLon(53.2611, -0.7972);
@@ -270,7 +270,7 @@ class LatLon
      *
      * @param   LatLon $point - Latitude/longitude of destination point.
      * @param   number $radius [radius=6371e3] - (Mean) radius of earth (defaults to radius in metres).
-     * @returns number Distance in km between this point and destination point (same units as radius).
+     * @return  number Distance in km between this point and destination point (same units as radius).
      *
      * @example
      *     $p1 = new LatLon(51.127, 1.338); $p2 = new LatLon(50.964, 1.853);
@@ -305,7 +305,7 @@ class LatLon
      * Returns the bearing from 'this' point to destination point along a rhumb line.
      *
      * @param   LatLon $point - Latitude/longitude of destination point.
-     * @returns number Bearing in degrees from north.
+     * @return  number Bearing in degrees from north.
      *
      * @example
      *     $p1 = new LatLon(51.127, 1.338); $p2 = new LatLon(50.964, 1.853);
@@ -332,7 +332,7 @@ class LatLon
      * @param   number $distance - Distance travelled, in same units as earth radius (default: metres).
      * @param   number $bearing - Bearing in degrees from north.
      * @param   number $radius [radius=6371e3] - (Mean) radius of earth (defaults to radius in metres).
-     * @returns LatLon Destination point.
+     * @return  LatLon Destination point.
      *
      * @example
      *     $p1 = new LatLon(51.127, 1.338);
@@ -368,7 +368,7 @@ class LatLon
      * Returns the loxodromic midpoint (along a rhumb line) between 'this' point and second point.
      *
      * @param   LatLon $point - Latitude/longitude of second point.
-     * @returns LatLon Midpoint between this point and second point.
+     * @return  LatLon Midpoint between this point and second point.
      *
      * @example
      *     $p1 = new LatLon(51.127, 1.338); $p2 = new LatLon(50.964, 1.853);
@@ -402,7 +402,7 @@ class LatLon
      *
      * @param   string $format [format=dms] - Format point as 'd', 'dm', 'dms'.
      * @param   number $dp [dp=0|2|4] - Number of decimal places to use - default 0 for dms, 2 for dm, 4 for d.
-     * @returns string Comma-separated latitude/longitude.
+     * @return  string Comma-separated latitude/longitude.
      */
     public function toString($format = 'dms', $dp = null)
     {

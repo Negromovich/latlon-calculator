@@ -30,7 +30,7 @@ class Dms
      * Seconds and minutes may be omitted.
      *
      * @param   string|number $dmsStr - Degrees or deg/min/sec in variety of formats.
-     * @returns number Degrees as decimal number.
+     * @return  number Degrees as decimal number.
      */
     public static function parseDMS($dmsStr)
     {
@@ -74,7 +74,7 @@ class Dms
      * @param   number $deg - Degrees to be formatted as specified.
      * @param   string $format [format=dms] - Return value as 'd', 'dm', 'dms' for deg, deg+min, deg+min+sec.
      * @param   number $dp [dp=0|2|4] - Number of decimal places to use – default 0 for dms, 2 for dm, 4 for d.
-     * @returns string Degrees formatted as deg/min/secs according to specified format.
+     * @return  string Degrees formatted as deg/min/secs according to specified format.
      */
     public static function toDMS($deg, $format = 'dms', $dp = null)
     {
@@ -131,7 +131,7 @@ class Dms
      * @param   number $deg - Degrees to be formatted as specified.
      * @param   string $format [format=dms] - Return value as 'd', 'dm', 'dms' for deg, deg+min, deg+min+sec.
      * @param   number $dp [dp=0|2|4] - Number of decimal places to use – default 0 for dms, 2 for dm, 4 for d.
-     * @returns string Degrees formatted as deg/min/secs according to specified format.
+     * @return  string Degrees formatted as deg/min/secs according to specified format.
      */
     public static function toLat($deg, $format = 'dms', $dp = null)
     {
@@ -145,7 +145,7 @@ class Dms
      * @param   number $deg - Degrees to be formatted as specified.
      * @param   string $format [format=dms] - Return value as 'd', 'dm', 'dms' for deg, deg+min, deg+min+sec.
      * @param   number $dp [dp=0|2|4] - Number of decimal places to use – default 0 for dms, 2 for dm, 4 for d.
-     * @returns string Degrees formatted as deg/min/secs according to specified format.
+     * @return  string Degrees formatted as deg/min/secs according to specified format.
      */
     public static function toLon($deg, $format = 'dms', $dp = null)
     {
@@ -159,7 +159,7 @@ class Dms
      * @param   number $deg - Degrees to be formatted as specified.
      * @param   string $format [format=dms] - Return value as 'd', 'dm', 'dms' for deg, deg+min, deg+min+sec.
      * @param   number $dp [dp=0|2|4] - Number of decimal places to use – default 0 for dms, 2 for dm, 4 for d.
-     * @returns string Degrees formatted as deg/min/secs according to specified format.
+     * @return  string Degrees formatted as deg/min/secs according to specified format.
      */
     public static function toBrng($deg, $format = 'dms', $dp = null)
     {
@@ -173,7 +173,7 @@ class Dms
      *
      * @param   number $bearing - Bearing in degrees from north.
      * @param   number $precision - Precision (cardinal / intercardinal / secondary-intercardinal).
-     * @returns string Compass point for supplied bearing.
+     * @return  string Compass point for supplied bearing.
      *
      * @example
      *   $point = Dms::compassPoint(24);    // point = 'NNE'
